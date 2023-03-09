@@ -1,12 +1,25 @@
 <template>
-    <h2 class="text-2xl font-bold mb-4">Popular Movies</h2>
-    <moviecard></moviecard>
+    <div>
+        <h1>Movies</h1>
+        <div class="flex flex-wrap justify-around">
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+        </div>
+    </div>
 </template>
 <script>
-import moviecard from '../components/moviecard.vue'
+import MovieCard from '@/components/movieCard.vue'
 export default {
     components: {
-        moviecard
+        MovieCard
     }
 }
 </script>
