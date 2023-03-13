@@ -96,9 +96,6 @@ export default {
             password: '',
         }
     },
-    mounted() {
-        this.$root.isinvalid()
-    },
     methods: {
         signup() {
             axios.post('http://127.0.0.1:8000/api/register', {
@@ -107,8 +104,7 @@ export default {
                 password: this.password
             })
                 .then(response => {
-                    localStorage.setItem('jwt_token', response.data.authorisation.token)
-                    this.$root.isinvalid()
+                    console.log(response.data.token);
                 })
                 .catch(error => {
                     console.log(error);

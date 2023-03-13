@@ -19,19 +19,5 @@ export default {
             actors: []
         }
     },
-    mounted() {
-        axios.get('http://127.0.0.1:8000/api/movies', {
-            headers: {
-                "Authorization": `Bearer ${this.$root.token}`
-            }
-        })
-            .then(response => {
-                console.log(response.data)
-                this.actors = response.data
-            })
-            .catch(error => {
-                console.log(error)
-            })
-    }
 }
 </script>

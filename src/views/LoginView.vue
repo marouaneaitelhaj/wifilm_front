@@ -85,9 +85,6 @@ export default {
       password: "",
     };
   },
-  mounted() {
-    this.$root.isinvalid()
-  },
   methods: {
     login() {
       axios

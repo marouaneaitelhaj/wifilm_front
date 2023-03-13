@@ -53,13 +53,13 @@
                 <RouterLink class="flex-shrink-0 pl-4 text-white" to="Actors">Actors</RouterLink>
                 <RouterLink class="flex-shrink-0 pl-4 text-white" to="About">About</RouterLink>
             </nav>
-
             <div class="hidden items-center gap-4 lg:flex">
                 <RouterLink to="login" class="rounded-lg bg-white px-5 py-2 text-sm font-medium text-black">
                     Log in
                 </RouterLink>
 
-                <RouterLink to="signup" class="rounded-lg bg-black border-2 border-solid border-white px-5 py-2 text-sm font-medium text-white">
+                <RouterLink to="signup"
+                    class="rounded-lg bg-black border-2 border-solid border-white px-5 py-2 text-sm font-medium text-white">
                     Sign up
                 </RouterLink>
             </div>
@@ -77,4 +77,7 @@
 </template>
 <script>
 import { RouterLink, RouterView } from 'vue-router'
+export default {
+    name: 'Navbar'
+}
 </script>
